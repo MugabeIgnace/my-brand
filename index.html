@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,65 @@
     <title>My-Brand</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <h1>Hello</h1>
+    <!-- Preloader-->
+    <div class="load_bg">
+        <div class="ring">
+        </div>
+        <span onload="handleOnLoad()">Redirecting..</span>
+    </div>
+    <!-- This is home section -->
+    <section id="home">
+        <nav>
+            <h1 class="logo">Brand</h1>
+            <ul>
+                <li><a href="#">Home</a> </li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Pages</a></li>
+                <!--<select name="pages" id="pages">
+                    <option value="portfolio">Portfolio</option>
+                    <option value="services">Services</option>
+                </select>-->
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <img src="./images/mugabe.png" alt="Mugabe Ignace">
+            <div info-p>
+                <h6>_Hello Dear</h6>
+                <h2>I'm Mugabe Ignace</h2>
+                <p>a web developer work with Html, Css, JavaScript and Nodejs. </p>
+                <button>My Cv</button>
+            </div>
+        </div>
+
+    </section>
+    <!-- About section start-->
+    <section class="about">
+        <div class="main">
+            <img src="./images/mugabe.png" alt="Mugabe Ignace">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <h5>Developer</h5>
+                <p>A motivated hardworking person who has knowledge in field of software engineering and willing to
+                    contribute with others to give solution to build our society. I am a front-end web developer. I can
+                    provide clean code and perfect design. I also make the website more and more interactive with web
+                    animations. I can provide clean code and perfect design. A responsive design makes your website
+                    accessible to all users, regardless of their device.</p>
+                    <button type="button">Let's Talk</button>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function () {
+            $('.load_bg').fadeToggle();
+        }, 6000);
+    </script>
 </body>
+
 </html>
