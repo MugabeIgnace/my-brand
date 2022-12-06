@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My-Brand</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function () {
+            $('.load_bg').fadeToggle();
+        }, 5000);
+    </script>
 </head>
 
 <body>
@@ -21,15 +27,15 @@
         <nav>
             <h1 class="logo">Brand</h1>
             <ul>
-                <li><a href="#">Home</a> </li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Pages</a></li>
+                <li><a href="#home">Home</a> </li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Pages</a></li>
                 <!--<select name="pages" id="pages">
                     <option value="portfolio">Portfolio</option>
                     <option value="services">Services</option>
                 </select>-->
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="content">
@@ -44,7 +50,7 @@
 
     </section>
     <!-- About section start-->
-    <section class="about">
+    <section id="about">
         <div class="main">
             <img src="./images/mugabe.png" alt="Mugabe Ignace">
             <div class="about-text">
@@ -55,18 +61,50 @@
                     provide clean code and perfect design. I also make the website more and more interactive with web
                     animations. I can provide clean code and perfect design. A responsive design makes your website
                     accessible to all users, regardless of their device.</p>
-                    <button type="button">Let's Talk</button>
+                <button type="button">Let's Talk</button>
+                <div class="resume">
+                    <ul class="skills">
+                        <h5>Skills</h5>
+                        <li>Java</li>
+                        <li>Javascript</li>
+                        <li>C/C++</li>
+                        <li>Css</li>
+                        <li>Figma</li>
+                    </ul>
+                    <div class="education">
+                        <h5>Education</h5>
+                        <h6>University of Rwanda</h6>
+                        <p>Bachelor's degree, in Computer and Software Engineering</p>
+                        <small><em>2021-2024</em></small>
+
+                        <h6>Ecole Secondaire Mudasomwa</h6>
+                        <p>Mathematics, Computer Science and Economics(MCE)</p>
+                        <small><em>2017-2019</em></small>
+                    </div>
+                    <div class="certificates">
+                        <h5>Certificate</h5>
+                        <p>PC Hardware and Software Cisco Networking Academy</p>
+                        <small><em>Issued Nov 2021</em></small>
+                    </div>
+
+
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Portfolio section start-->
+    <section>
+        <div id="portfolio">
+            <img src="./images/edit_notes.png" alt="Project1">
+            <img src="./images/edit_notes.png" alt="Project2">
+            <img src="./images/edit_notes.png" alt="Project3">
+            <img src="./images/edit_notes.png" alt="Project4">
+        </div>
+    </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-        setTimeout(function () {
-            $('.load_bg').fadeToggle();
-        }, 6000);
-    </script>
+
+
 </body>
 
 </html>
