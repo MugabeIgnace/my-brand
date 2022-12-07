@@ -62,14 +62,16 @@
                     animations. I can provide clean code and perfect design. A responsive design makes your website
                     accessible to all users, regardless of their device.</p>
                 <div class="resume">
-                    <ul class="skills">
+                    <div class="skills">
                         <h5>Skills</h5>
-                        <li>Java</li>
-                        <li>Javascript</li>
-                        <li>C/C++</li>
-                        <li>Css</li>
-                        <li>Figma</li>
-                    </ul>
+                        <ul>
+                            <li>Java</li>
+                            <li>Javascript</li>
+                            <li>C/C++</li>
+                            <li>Css</li>
+                            <li>Figma</li>
+                        </ul>
+                    </div>
                     <div class="education">
                         <h5>Education</h5>
                         <h6>University of Rwanda</h6>
@@ -162,8 +164,9 @@
         <div class="subscribe">
 
             <p>Enron is every day here for you. Contact us and stay in touch </p>
-            <label for="email">Email :</label>
-            <input type="email" id="email" class="email"><input type="submit" value="Subscribe">
+            <label for="emaill">Email :</label>
+            <input type="email" id="emaill" class="email">
+            <button>Subscribe</button>
         </div>
     </section>
     <!-- Blog section start-->
@@ -189,9 +192,31 @@
     </section>
     <!-- Contact section start-->
     <section id="contact" class="contact">
+        <h2>My Contacts</h2>
+        <address>
+            <p><span class="address">Phone :</span>(+250) 786 345 9800</p>
+            <p><span class="address">Email :</span>ignacemugabe@gmail.com</p>
+            <p><span class="address">Address :</span>Kigali, Rwanda</p>
+            <p><span class="address">GitHub :</span>https://github.com/MugabeIgnace</p>
+        </address>
+        <h2>Get In touch</h2>
 
+        <form action="post" class="contact">
+            <label for="names">Names:</label>
+            <input type="text" name="names" id="names" required>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+            <label for="message">Message:</label>
+            <input type="text" name="message" id="message">
+            <button class="contact-btn">Send</button>
+        </form>
     </section>
 
+
+    <!-- Footer of the Website -->
+    <footer>
+        Website of Mugabe Ignace © all right reserved
+    </footer>
 
 
 </body>

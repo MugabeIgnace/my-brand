@@ -95,10 +95,24 @@ body {
     --clr-secondary: #007cc7;
     --clr-green: #26d80b;
     --clr-special: #fcfc;
+    --clr-input-bg: #203647;
+    --clr-footer-bg: #065C90;
+    --clr-link-color: var(--clr-white);
+    --clr-link-hover-color: var(--clr-white);
 }
 
 small {
     margin-top: 6em 0;
+}
+
+button {
+    background: var(--clr-secondary);
+    border-radius: 60px;
+    color: var(--clr-white);
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 800;
+    border-style: none !important;
 }
 
 .home {
@@ -176,6 +190,10 @@ h2 {
     margin-left: 50%;
     margin-right: auto;
     margin-bottom: 50px;
+
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 300;
 }
 
 h6 {
@@ -282,6 +300,10 @@ h6 {
     padding: 8em;
 }
 
+.subscribe input {
+    background-color: var(--clr-input-bg);
+}
+
 .first_blog,
 .second_blog {
     margin: auto 5rem;
@@ -300,4 +322,36 @@ h6 {
 .blog_img {
     width: 20em;
     height: 12em;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input {
+    background-color: var(--clr-input-bg);
+    ;
+}
+
+span.address {
+    color: var(--clr-footer-bg);
+    font-size: small;
+
+
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 600;
+}
+
+footer {
+    background-color: var(--clr-footer-bg);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 0.9em;
 }
