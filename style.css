@@ -38,7 +38,6 @@
 }
 
 .ring::before {
-    position: absolute;
     content: '';
     left: 0;
     top: 0;
@@ -57,17 +56,7 @@ span {
 
 }
 
-/* end working on preloader */
-/*==================================================================================================================================
 
-    /* colors */
-:root {
-    --clr-white: white;
-    --clr-background: #12232E;
-    --clr-secondary: #007cc7;
-    --clr-green: #26d80b;
-    --clr-special: #fcfc;
-}
 
 body {
     background-color: var(--clr-background);
@@ -96,8 +85,19 @@ body {
     animation: ring 2s linear infinite;
 }
 
+/* end working on preloader */
+/*==================================================================================================================================
 
-#home {
+    /* colors */
+:root {
+    --clr-white: white;
+    --clr-background: #12232E;
+    --clr-secondary: #007cc7;
+    --clr-green: #26d80b;
+    --clr-special: #fcfc;
+}
+
+.home {
     background-image: url(./images/background.jpg);
     color: var(--clr-white);
     background-size: cover;
@@ -117,6 +117,7 @@ nav {
     padding-left: 4%;
     padding-right: 1%;
 }
+
 
 .logo {
     color: var(--clr-white);
@@ -180,14 +181,12 @@ h6 {
     font-size: 20px;
 }
 
-#about {
+.about {
     padding: 100px 0px;
     background-color: var(--clr-background);
-    width: 100vw;
-    height: 100vh;
 }
 
-#about img {
+.about img {
     height: auto;
     width: 430px;
 }
@@ -220,14 +219,15 @@ h6 {
 }
 
 #portfolio {
-    position:relative;
     display: grid;
-    grid-template-columns:repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10vw;
-    justify-content:center;
+    justify-content: center;
+    margin: 5em;
 
 }
-#portfolio img{
+
+#portfolio img {
     width: 25em;
     height: 15em;
 }

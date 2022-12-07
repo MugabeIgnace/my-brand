@@ -1,0 +1,33 @@
+:root {
+    --clr-background: #344D76;
+    --clr-primary1:#102b3c;
+    --clr-primary2:#007cc7b5;
+}
+
+body {
+    background-color: var(--clr-background);
+
+}
+
+.profile {
+
+    position: absolute;
+    width: 492px;
+    height: 832px;
+    left: 18px;
+    top: 0px;
+
+    background: var(--clr-primary1);
+    border-radius: 20px;
+}
+
+.about {
+    position: absolute;
+width: 737px;
+height: 830px;
+right: 20px;
+bottom: 0px;
+
+background: var(--clr-primary2);
+border-radius: 20px;
+}
