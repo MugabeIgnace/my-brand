@@ -97,6 +97,10 @@ body {
     --clr-special: #fcfc;
 }
 
+small {
+    margin-top: 6em 0;
+}
+
 .home {
     background-image: url(./images/background.jpg);
     color: var(--clr-white);
@@ -115,7 +119,6 @@ nav {
     align-items: center;
     padding-top: 2%;
     padding-left: 4%;
-    padding-right: 1%;
 }
 
 
@@ -152,7 +155,6 @@ nav ul li a:hover {
 
 .content {
     max-width: 95%;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -171,7 +173,8 @@ nav ul li a:hover {
 
 h2 {
     color: var(--clr-white);
-    margin: 20px 0px 20px;
+    margin-left: 50%;
+    margin-right: auto;
     margin-bottom: 50px;
 }
 
@@ -182,7 +185,7 @@ h6 {
 }
 
 .about {
-    padding: 100px 0px;
+    padding: 3rem 0px;
     background-color: var(--clr-background);
 }
 
@@ -204,12 +207,6 @@ h6 {
     justify-content: space-around;
 }
 
-.about-text h2 {
-    color: var(--clr-white);
-    font-size: 75px;
-    text-transform: capitalize;
-    margin-bottom: 20px;
-}
 
 .about-text h5 {
     color: var(--clr-white);
@@ -218,16 +215,89 @@ h6 {
     text-transform: capitalize;
 }
 
-#portfolio {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10vw;
-    justify-content: center;
-    margin: 5em;
-
+.resume {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 2em;
 }
 
-#portfolio img {
-    width: 25em;
-    height: 15em;
+.resume>.skills,
+.resume>.education,
+.resume>.certificates {
+    margin-left: 1.5em;
+}
+
+#portfolio {
+    background-size: cover;
+    background-position: center;
+    padding-top: 2em;
+    padding-left: 3em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    justify-content: center;
+    background-image: url(./images/portfolio.jpg);
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5em;
+    row-gap: 10vh;
+}
+
+.portfolio img {
+    width: 20em;
+    height: 12em;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    margin: auto 5rem;
+}
+
+.service_type {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5em;
+    margin-bottom: 6em;
+}
+
+.web_img,
+.soft_img,
+.market_img,
+.game_img {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.icon {
+    color: var(--clr-white);
+    background-color: var(--clr-white);
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    padding: 8em;
+}
+
+.first_blog,
+.second_blog {
+    margin: auto 5rem;
+    display: flex;
+    flex-direction: row;
+    padding: 2em;
+    align-items: center;
+}
+
+.blog p {
+    margin: 3em;
+}
+
+
+
+.blog_img {
+    width: 20em;
+    height: 12em;
 }
