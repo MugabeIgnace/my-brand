@@ -20,7 +20,7 @@
     <div class="load_bg">
         <div class="ring">
         </div>
-        <span onload="handleOnLoad()">Redirecting..</span>
+        an onload="handleOnLoad()">Redirecting..<p>
     </div>
     <!-- This is home section -->
     <section id="home" class="home">
@@ -40,11 +40,11 @@
         </nav>
         <div class="content">
             <img src="./images/mugabe.png" alt="Mugabe Ignace">
-            <div info-p>
+            <div class="info-p">
                 <h6>_Hello Dear</h6>
                 <h3>I'm Mugabe Ignace</h3>
                 <p>a web developer work with Html, Css, JavaScript and Nodejs. </p>
-                <button>My Cv</button>
+                <a href="./tools/CV.pdf" class="button cv" target="_blank">My Cv</a>
             </div>
         </div>
 
@@ -117,7 +117,7 @@
                 <img src="./images/edit_notes.png" alt="Project6">
             </div>
         </div>
-        <button>View More</button>
+        <a href="#portfolio" class="portfolio-btn">View More</a>
     </section>
 
     <!-- Services section start-->
@@ -166,50 +166,56 @@
             <p>Enron is every day here for you. Contact us and stay in touch </p>
             <label for="emaill">Email :</label>
             <input type="email" id="emaill" class="email">
-            <button>Subscribe</button>
+            <a href="#services" class="button service-btn">Subscribe</a>
         </div>
     </section>
     <!-- Blog section start-->
-    <section id="blog" class="blog">
-        <h2>Latest Blog</h2>
-        <div class="first_blog">
-            <img src="./images/blog1.png" alt="first blog" class="blog_img">
-            <p>VB LAB INSIGHTS
-                How designing with passion can redefine the customer experience
-                Renee McKeon Rives, Capital One <br>
-                <small>November 30, 2022 6:20 AM</small>
-            </p>
+    <section id="blog">
+        <div class="blog">
+            <h2>Latest Blog</h2>
+            <div class="first_blog">
+                <img src="./images/blog1.png" alt="first blog" class="blog_img">
+                <p>VB LAB INSIGHTS
+                    How designing with passion can redefine the customer experience
+                    Renee McKeon Rives, Capital One <br>
+                    <small>November 30, 2022 6:20 AM</small>
+                </p>
+            </div>
+            <div class="second_blog">
+                <img src="./images/blog2.png" alt="second blog" class="blog_img">
+                <p>SPONSORED JOBS
+                    7 critical power skills you need to succeed at work
+                    Kirstie McDermott <br>
+                    <small> November 29, 2022 11:49 AM</small>
+                </p>
+            </div>
         </div>
-        <div class="second_blog">
-            <img src="./images/blog2.png" alt="second blog" class="blog_img">
-            <p>SPONSORED JOBS
-                7 critical power skills you need to succeed at work
-                Kirstie McDermott <br>
-                <small> November 29, 2022 11:49 AM</small>
-            </p>
-        </div>
-        <button class="blog-btn">Create a Blog</button>
+        <a href="#blog" class="blog-btn button">Create a Blog</a>
     </section>
     <!-- Contact section start-->
-    <section id="contact" class="contact">
-        <h2>My Contacts</h2>
-        <address>
-            <p><span class="address">Phone :</span>(+250) 786 345 9800</p>
-            <p><span class="address">Email :</span>ignacemugabe@gmail.com</p>
-            <p><span class="address">Address :</span>Kigali, Rwanda</p>
-            <p><span class="address">GitHub :</span>https://github.com/MugabeIgnace</p>
-        </address>
-        <h2>Get In touch</h2>
+    <section id="contact">
+        <div class="contact">
+            <h2>My Contacts</h2>
+            <address>
+                Phone :<p> (+250) 786 345 9800</p>
+                Email :<p> ignacemugabe@gmail.com</p>
+                Address :<p> Kigali, Rwanda</p>
+                GitHub :<p> https://github.com/MugabeIgnace</p>
+            </address>
+            <h6>_Get In touch</h6>
 
-        <form action="post" class="contact">
-            <label for="names">Names:</label>
-            <input type="text" name="names" id="names" required>
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" required>
-            <label for="message">Message:</label>
-            <input type="text" name="message" id="message">
-            <button class="contact-btn">Send</button>
+        </div>
+        <form action="post">
+            <div class="contact_form">
+                <label for="names">Names:</label>
+                <input type="text" name="names" id="names" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <label for="message">Message:</label>
+            </div>
+            <textarea rows="10" cols="50" name="message" id="message"></textarea>
         </form>
+        <a href="#contact" class="contact-btn button">Send</a>
     </section>
 
 
