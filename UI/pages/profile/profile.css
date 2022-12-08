@@ -1,33 +1,57 @@
 :root {
-    --clr-background: #344D76;
-    --clr-primary1:#102b3c;
-    --clr-primary2:#007cc7b5;
+    --clr-background: #344d76;
+    --clr-primary1: #102b3c;
+    --clr-primary2: #007cc7b5;
+    --clr-white: #ffffff;
 }
 
 body {
     background-color: var(--clr-background);
-
+    display: flex;
+    padding: 2em 1.5em;
 }
 
 .profile {
-
-    position: absolute;
-    width: 492px;
-    height: 832px;
-    left: 18px;
-    top: 0px;
-
+    display: inline-grid;
     background: var(--clr-primary1);
+    color: var(--clr-white);
     border-radius: 20px;
+
 }
 
-.about {
-    position: absolute;
-width: 737px;
-height: 830px;
-right: 20px;
-bottom: 0px;
+.person {
+    display: inline-grid;
+    padding: 4em;
+    justify-content: center;
+}
 
-background: var(--clr-primary2);
-border-radius: 20px;
+.person img {
+    border-radius: 50%;
+    width: 12vw;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    padding: 2em 2em 2em 0;
+    height: 3em;
+}
+
+.icon {
+    background-color: var(--clr-white);
+    margin: 1em;
+    padding: 0;
+}
+
+
+.about {
+    background: var(--clr-primary2);
+    border-radius: 20px;
+    padding-left: 6em;
+    padding-right: 8em;
+    margin-left: 0.5em;
+}
+
+h1 {
+    margin-bottom: 2em;
 }

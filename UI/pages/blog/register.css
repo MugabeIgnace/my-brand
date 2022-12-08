@@ -1,0 +1,93 @@
+:root {
+    --clr-background: #2C5C8B;
+    --clr-primary1: #102b3c;
+    --clr-primary2: #007cc7b5;
+    --clr-white: #ffffff;
+    --clr-input: #294052;
+}
+
+body {
+    background-color: var(--clr-background);
+    display: flex;
+    padding: 2em 1.5em;
+    justify-content: center;
+    align-content: center;
+}
+
+.sign_up,
+.account {
+    display: flex;
+    flex-direction: column;
+    background: var(--clr-primary2);
+    color: var(--clr-white);
+    backdrop-filter: blur(1px);
+    border-radius: 20px 0px 0px 20px;
+    padding: 8em 4em;
+
+}
+
+
+.sign_in,
+.start {
+    display: flex;
+    flex-direction: column;
+    background: var(--clr-primary1);
+    color: var(--clr-white);
+    border-radius: 0px 20px 20px 0px;
+    padding: 6em;
+    margin-left: 0.1em;
+}
+
+input {
+    border-style: none;
+    border-radius: 30px;
+    background: var(--clr-input);
+    color: var(--clr-white);
+    text-align: start;
+    padding: 0.5em 2em;
+    margin: 1em 0;
+}
+
+label {
+    margin-top: 1em;
+}
+
+.button {
+    border-radius: 30px;
+    text-align: center;
+    padding: 0.5em 1em;
+    margin-top: 2em;
+    border-style: solid;
+    border-width: 1px;
+    text-decoration: none;
+}
+
+.sign {
+    background-color: transparent;
+    color: var(--clr-primary2);
+    border-color: var(--clr-primary2);
+}
+
+.register {
+    background-color: transparent;
+    border-color: var(--clr-white);
+    color: var(--clr-white);
+}
+
+.reset_password {
+    text-decoration: none;
+    color: var(--clr-primary2);
+    margin-top: 1em;
+}
+
+.with_email {
+    text-decoration: none;
+    color: var(--clr-primary2);
+    margin-top: 1em;
+}
+
+.reset_password,
+.with_email,
+h2 {
+    margin-left: 20%;
+}
