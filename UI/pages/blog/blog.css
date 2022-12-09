@@ -9,6 +9,8 @@
     --clr-secondary: #1A88CF;
     --clr-secondary2: #53ACE5;
     --clr-line: #999;
+    --clr-hover: #bdffff;
+    --clr-btn-bg: #4496CB;
 }
 
 hr {
@@ -22,6 +24,7 @@ hr {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
 }
 
 button {
@@ -31,6 +34,15 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    filter: blur(0.04em);
+    color: var(--clr-hover);
+    box-shadow: #1f435a 0px 30px 60px -12px inset, #1f435a 0px 18px 36px -18px inset;
+}
+
+button:active {
+    color: var(--background-color);
+}
 
 aside {
     grid-area: aside;
@@ -66,9 +78,17 @@ aside {
 
 .nav_lower>button {
     background-color: var(--clr-background);
-    color: var(--clr-white);
     margin: 0 0 1em 2em;
     align-self: flex-end;
+}
+
+.nav_lower>button>a {
+    color: var(--clr-white);
+
+}
+
+.nav_lower>button>a:active {
+    color: var(--background-color);
 }
 
 .active {
@@ -141,9 +161,11 @@ aside {
     margin-top: 2em;
     margin-right: 1em;
 }
-.right_main>h6{
+
+.right_main>h6 {
     margin-left: 1em;
 }
+
 main {
     grid-area: main;
     display: grid;
@@ -178,16 +200,25 @@ body {
     border-radius: 0 0 20px 20px;
     width: 100%;
     height: 100%;
-
+    background-position: center;
+    background-size: cover;
 }
 
 .left_hd>button {
     align-self: flex-end;
     background-color: var(--clr-secondary);
-    color: var(--clr-white);
     margin: 0 0 2em 2em;
+}
+
+.left_hd>button>a {
+    color: var(--clr-white);
 
 }
+
+.left_hd>button>a:active {
+    color: var(--clr-background);
+}
+
 
 .right_hd {
     background-color: var(--clr-background);
@@ -201,9 +232,17 @@ body {
     height: 6em;
     width: 6em;
     border-radius: 20px;
+
 }
 
 .right_hd>h4 {
+    color: var(--clr-white);
+    text-align: center;
+
+}
+
+.right_hd>h4>a {
+    text-decoration: none;
     color: var(--clr-white);
 
 }
@@ -239,10 +278,11 @@ body {
 .right_main>div>button,
 .readers>div>button {
     margin-left: 12em;
-    background-color:var(--clr-active-bg);
+    background-color: var(--clr-btn-bg);
     cursor: pointer;
 }
-.space{
+
+.space {
     display: flex;
     justify-content: space-between;
     margin-top: 1em;
