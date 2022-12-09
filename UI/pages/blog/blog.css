@@ -1,18 +1,250 @@
 /* Googlefont Poppins CDN Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
-:root{
-    --clr-background:#102B3C;
+:root {
+    --clr-background: #102B3C;
+    --clr-primary: #0C73B5;
+    --clr-white: white;
+    --clr-active-bg: #235574;
+    --clr-secondary: #1A88CF;
+    --clr-secondary2: #53ACE5;
+    --clr-line: #999;
 }
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+button {
+    border-style: none;
+    border-radius: 20px;
+    padding: 0.8em 2em;
+    cursor: pointer;
+}
+
+
+aside {
+    grid-area: aside;
+    display: grid;
+    height: 100vh;
+
+}
+
+.nav_upper {
+    background-color: var(--clr-background);
+    height: 80%;
+}
+
+.nav_upper>ul>li {
+    text-align: center;
+    padding: 1em 1.3em;
+    margin-top: 1em;
+}
+
+.nav_lower {
+    display: flex;
+    background-color: var(--clr-primary);
+    height: 100%;
+
+}
+
+.nav_upper>h1 {
+    color: var(--clr-white);
+    background-color: var(--clr-primary);
+    text-align: center;
+    padding: 0.4em 1em;
+}
+
+.nav_lower>button {
+    background-color: var(--clr-background);
+    color: var(--clr-white);
+    margin: 0 0 1em 2em;
+    align-self: flex-end;
+}
+
+.active {
+    background-color: var(--clr-active-bg);
+}
+
+.nav_upper ul li {
+    color: var(--clr-white);
+}
+
+
+.readers {
     display: flex;
     flex-direction: column;
+    background-color: var(--clr-secondary2);
+    grid-area: readers;
+    border-radius: 20px;
+    margin: 2em;
+    padding-right: 1em;
+
+}
+
+
+.readers>div>img,
+.readers>div>p,
+.readers>div>h4 {
+    margin-left: 2em;
+    margin-right: 1em;
+}
+
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    background-color: var(--clr-secondary);
+    grid-area: numbers;
+    margin: 2em 4em 3em 2em;
+    padding: 0.3em 1em 1em 1em;
+    border-radius: 20px;
+}
+
+
+
+.left_main {
+    grid-area: left;
+    display: grid;
+    grid-template-areas:
+        "numbers  numbers"
+        "readers  readers"
+        "readers  readers"
+    ;
+}
+
+.right_main {
+    grid-area: right;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--clr-secondary2);
+    border-radius: 20px;
+    padding: 2em;
+    margin: 4.5em 1em 1em 2em;
+}
+
+.right_main>div {
+    display: flex;
+    margin-top: 2em;
+}
+
+.right_main>div>p {
+    margin-top: 2em;
+    margin-right: 1em;
+}
+.right_main>h6{
+    margin-left: 1em;
+}
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas:
+        "left left   right"
+        "left left   right"
+        "left left   rightt";
+}
+
+
+
+header {
+    grid-area: header;
+    display: flex;
+}
+
+body {
+    display: grid;
+    background-color: var(--clr-primary);
+    grid-template-areas:
+        "aside  header header"
+        "aside header header"
+        "aside  main main"
+        "aside  main main"
+    ;
+}
+
+.left_hd {
+    display: flex;
+    background-image: url(../../../images/splash.avif);
+    margin: 0 1em;
+    border-radius: 0 0 20px 20px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.left_hd>button {
+    align-self: flex-end;
+    background-color: var(--clr-secondary);
+    color: var(--clr-white);
+    margin: 0 0 2em 2em;
+
+}
+
+.right_hd {
     background-color: var(--clr-background);
+    border-radius: 20px;
+    padding: 1em;
+    margin: 0 1em;
+    height: 80%;
+}
+
+.right_hd>img {
+    height: 6em;
+    width: 6em;
+    border-radius: 20px;
+}
+
+.right_hd>h4 {
+    color: var(--clr-white);
+
+}
+
+.likes {
+    background-color: var(--clr-white);
+    border-radius: 20px;
+    text-align: center;
+    padding: 2em 0.4em 1em;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.likes>h4 {
+    margin-top: 1.3em;
+}
+
+
+.show {
+    width: 4em;
+    height: 2.5em;
+    margin-bottom: 0.1em;
+}
+
+.readers>div {
+
+    display: flex;
+    margin-top: 2em;
+}
+
+.right_main>div>button,
+.readers>div>button {
+    margin-left: 12em;
+    background-color:var(--clr-active-bg);
+    cursor: pointer;
+}
+.space{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
