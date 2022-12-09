@@ -1,0 +1,26 @@
+:root {
+    --clr-background: #344d76;
+    --clr-primary1: #102b3c;
+    --clr-primary2: #007cc7b5;
+    --clr-white: #ffffff;
+}
+
+body {
+    background-color: var(--clr-primary2);
+    padding: 2em;
+
+}
+
+.text-editor {
+    min-height: 200px;
+    border-radius: 5px;
+    border-style: groove;
+}
+
+#text-editor {
+    min-height: 200px;
+}
+
+input {
+    min-width: 100px;
+}

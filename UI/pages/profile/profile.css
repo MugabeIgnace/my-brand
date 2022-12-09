@@ -18,6 +18,28 @@ body {
     border-radius: 20px;
 
 }
+.profile>a{
+    text-align: center;
+    background-color: var(--clr-primary2);
+    color: var(--clr-white);
+    margin: 1em;
+    border-style: none;
+    border-radius: 20px;
+    padding: 0.8em 2em;
+    cursor: pointer;
+}
+
+
+.profile>a:hover {
+    filter: blur(0.04em);
+    color: var(--clr-hover);
+    box-shadow: #1f435a 0px 30px 60px -12px inset, #1f435a 0px 18px 36px -18px inset;
+}
+
+.profile>a:active {
+    color: var(--background-color);
+}
+
 
 .person {
     display: inline-grid;
@@ -26,7 +48,7 @@ body {
 }
 
 .person img {
-    border-radius: 50%;
+    border-radius: 40%;
     width: 12vw;
 }
 
