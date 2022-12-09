@@ -288,6 +288,3 @@ body {
     margin-top: 1em;
     margin-bottom: 1em;
 }
-
-/* Tablet View */
-@media screen and (min-width: 800px) and (max-width: 1200px) {}
