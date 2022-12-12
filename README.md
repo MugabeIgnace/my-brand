@@ -2,4 +2,4 @@
 
 Personal website
 
-[Live demo](<https://heroic-otter-fcf6ea.netlify.app/>)
+[Live demo](<https://ignace-s-portfolio.netlify.app/>)
