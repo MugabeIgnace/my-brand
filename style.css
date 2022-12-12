@@ -420,6 +420,10 @@ section .title::after {
     margin: 0.3em;
 }
 
+.blogs>.card a {
+    color: var(--clr-white);
+}
+
 .blog .title::after {
     content: "latest blogs";
 }
