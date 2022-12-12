@@ -6,7 +6,7 @@
     --clr-primary2: #102B3C;
     --clr-white: white;
     --clr-line: #999;
-    --clr-hover: #bdffff;
+    --clr-hover: #bdcfff6b;
     --clr-btn-bg: #4496CB;
     --clr-active-bg: #235574;
 
@@ -50,22 +50,27 @@ header {
     border-radius: 0px 0px 20px 20px;
     justify-content: space-between;
 }
-.left_hd{
+
+.left_hd {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.left_hd div button{
+
+.left_hd div button {
     margin-right: 1em;
 }
-.left_hd h1{
+
+.left_hd h1 {
     background-color: var(--clr-primary2);
     color: var(--clr-primary);
     width: 60%;
 }
-.left_hd h1 span{
+
+.left_hd h1 span {
     color: var(--clr-white);
 }
+
 button {
     border-style: none;
     border-radius: 20px;
@@ -74,7 +79,8 @@ button {
     color: var(--clr-white);
     background-color: var(--clr-primary);
 }
-button a{
+
+button a {
     color: var(--clr-white);
 }
 
@@ -127,6 +133,23 @@ main {
     border-radius: 20px;
     margin: 4em 1em 1em 1em;
     padding-bottom: 0.5em;
+}
+
+main a {
+    color: black;
+
+}
+
+main a h2 {
+    color: var(--clr-white);
+    
+}
+.blog{
+    border-radius: 20px;
+}
+
+main a .blog:hover {
+    background-color: var(--clr-hover);
 }
 
 .title,
