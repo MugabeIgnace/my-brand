@@ -162,23 +162,12 @@ aside {
     margin-right: 1em;
 }
 
-.right_main>h6 {
-    margin-left: 1em;
-}
+
+
+
 
 main {
     grid-area: main;
-    display: grid;
-    grid-template-areas:
-        "left left   right"
-        "left left   right"
-        "left left   rightt";
-}
-
-
-
-header {
-    grid-area: header;
     display: flex;
 }
 
@@ -186,10 +175,8 @@ body {
     display: grid;
     background-color: var(--clr-primary);
     grid-template-areas:
-        "aside  header header"
-        "aside header header"
         "aside  main main"
-        "aside  main main"
+        "aside main main"
     ;
 }
 
