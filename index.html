@@ -3,232 +3,252 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My-Brand</title>
-    <link rel="stylesheet" href="./style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!--
-      <script>
-        setTimeout(function () {
-            $('.load_bg').fadeToggle();
-        }, 1000);
-    </script>
-   -->
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Adding my kit's code to the project from fontawesome-->
+    <script src="https://kit.fontawesome.com/a7221279c0.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <!-- Preloader-->
-    <!--
-        <div class="load_bg">
-        <div class="ring">
-        </div>
-        an onload="handleOnLoad()">Redirecting..<p>
-    </div>
-    -->
-    <!-- This is home section -->
-    <section id="home" class="home">
-        <nav>
-            <h1 class="logo">Brand</h1>
-            <ul>
-                <li><a href="#home">Home</a> </li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Pages</a></li>
-                <!--<select name="pages" id="pages">
-                    <option value="portfolio">Portfolio</option>
-                    <option value="services">Services</option>
-                </select>-->
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Bra<span>nd.</span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#services" class="menu-btn">Services</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#blog" class="menu-btn">Blog</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
-        </nav>
-        <div class="content">
-            <img src="./images/mugabe.png" alt="Mugabe Ignace">
-            <div class="info-p">
-                <h6>_Hello Dear</h6>
-                <h3>I'm Mugabe Ignace</h3>
-                <p>a web developer work with Html, Css, JavaScript and Nodejs. </p>
-                <a href="./tools/CV.pdf" class="button cv" target="_blank">My Cv</a>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
+    </nav>
 
+    <!-- home section start -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Mugabe Ignace</div>
+                <div class="text-3">a Web Developer</div>
+                <a href="https://github.com/MugabeIgnace">Visit me</a>
+            </div>
+        </div>
     </section>
-    <!-- About section start-->
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <div class="main">
-            <img src="./images/mugabe.png" alt="Mugabe Ignace">
-            <div class="about-text">
-                <h5>Developer</h5>
-                <p>A motivated hardworking person who has knowledge in field of software engineering and willing to
-                    contribute with others to give solution to build our society. I am a front-end web developer. I can
-                    provide clean code and perfect design. I also make the website more and more interactive with web
-                    animations. I can provide clean code and perfect design. A responsive design makes your website
-                    accessible to all users, regardless of their device.</p>
-                <div class="resume">
-                    <div class="skills">
-                        <h5>Skills</h5>
-                        <ul>
-                            <li>Java</li>
-                            <li>Javascript</li>
-                            <li>C/C++</li>
-                            <li>Css</li>
-                            <li>Figma</li>
-                        </ul>
+
+    <!-- about section start -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="./images/mugabe.png" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text">I'm Mugabe Nshuti Ignace and I'm a web and software developer</div>
+                    <p>A motivated hardworking person who has knowledge in field of software engineering and willing to
+                        contribute with others to give solution to build our society. I am a front-end web developer. I
+                        can
+                        provide clean code and perfect design. I also make the website more and more interactive with
+                        web
+                        animations. I can provide clean code and perfect design. A responsive design makes your website
+                        accessible to all users, regardless of their device..</p>
+                    <a href="./tools/CV.pdf">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- services section start -->
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">My services</h2>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-paint-brush"></i>
+                        <div class="text">Web Design</div>
+                        <p>We Build Websites For Your Needs. Whether you're a business, organization, or an individual
+                            looking for a website.
+                        </p>
                     </div>
-                    <div class="education">
-                        <h5>Education</h5>
-                        <h6>University of Rwanda</h6>
-                        <p>Bachelor's degree, in Computer and Software Engineering</p>
-                        <small><em>2021-2024</em></small>
-
-                        <h6>Ecole Secondaire Mudasomwa</h6>
-                        <p>Mathematics, Computer Science and Economics(MCE)</p>
-                        <small><em>2017-2019</em></small>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="text">Marketing</div>
+                        <p>We Build Websites For Your Needs. Whether you're a business, organization, or an individual
+                            looking for a website.
+                        </p>
                     </div>
-                    <div class="certificates">
-                        <h5>Certificate</h5>
-                        <p>PC Hardware and Software Cisco Networking Academy</p>
-                        <small><em>Issued Nov 2021</em></small>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">Apps Design</div>
+                        <p>We Build Websites For Your Needs. Whether you're a business, organization, or an individual
+                            looking for a website.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills section start -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">My skills</h2>
+            <div class="skills-content">
+                <div class="column left">
+
+                    <div class="text">
+                        Education
+                    </div>
+                    <h6>University of Rwanda</h6>
+                    <p>Bachelor's degree, in Computer and Software Engineering</p>
+                    <small><em>2021-2024</em></small>
+
+                    <h6>Ecole Secondaire Mudasomwa</h6>
+                    <p>Mathematics, Computer Science and Economics(MCE)</p>
+                    <small><em>2017-2019</em></small>
+
+
+                    <div class="text">
+                        Certificate
+                    </div>
+                    <p>PC Hardware and Software Cisco Networking Academy</p>
+                    <small><em>Issued Nov 2021</em></small>
+                    <hr>
+
+                    <div class="text "> Skills</div>
+                    <ul class="ul-type">
+                        <li>Java</li>
+                        <li>Javascript</li>
+                        <li>C/C++</li>
+                        <li>Css</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+
+                <div class="column right">
+                    <div class="text">Project:</div>
+                    <hr>
+                    <div class="project">
+                        <img src="./images/edit_notes.png" alt="my project">
+                        <div>Project for taking notes</div>
+
                     </div>
 
-
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio section start-->
-    <section id="portfolio">
-        <h2>My Portfolio</h2>
-        <div class="portfolio">
-            <div>
-                <img src="./images/edit_notes.png" alt="Project1">
-            </div>
-            <div>
-                <img src="./images/edit_notes.png" alt="Project2">
-            </div>
-            <div>
-                <img src="./images/edit_notes.png" alt="Project3">
-            </div>
-            <div>
-                <img src="./images/edit_notes.png" alt="Project4">
-            </div>
-            <div>
-                <img src="./images/edit_notes.png" alt="Project5">
-            </div>
-            <div>
-                <img src="./images/edit_notes.png" alt="Project6">
+    <!-- blog section start -->
+    <section class="blog" id="blog">
+        <div class="max-width">
+            <h2 class="title">View blogs</h2>
+            <div class="blogs ">
+                <div class="card">
+                    <div class="box">
+                        <a href="./UI/pages/blog/blog.html">
+                            <img src="./images/blog1.png" alt="first blog">
+                        </a>
+                        <div class="text">VB LAB INSIGHTS</div>
+                        <p> How designing with passion can redefine the customer experience
+                            Renee McKeon Rives, Capital One <br>
+                            <small>November 30, 2022 6:20 AM</small>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <a href="./UI/pages/blog/blog.html">
+                            <img src="./images/blog2.png" alt="second blog">
+
+                        </a>
+                        <div class="text">SPONSORED JOBS</div>
+                        <p>7 critical power skills you need to succeed at work
+                            Kirstie McDermott <br>
+                            <small> November 29, 2022 11:49 AM</small>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-        <a href="#portfolio" class="portfolio-btn">View More</a>
     </section>
 
-    <!-- Services section start-->
-    <section class="services">
-        <h2>Services</h2>
-        <div class="service_type">
-            <div class="web">
-                <div class="web_img">
-                    <img src="./tools/web.svg" alt="Web" class="icon">
-                    <h4>Web development</h4>
+    <!-- contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Contact me</div>
+                    <p>If there are any questions or suggestion, we are happy to help.</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Phone</div>
+                                <div class="sub-title">(+250)786651889</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Kigali, Rwanda</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">ignacemugabe@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p>We Build Websites For Your Needs. Whether you're a business, organization, or an individual looking
-                    for a website.
-                </p>
-            </div>
-            <div class="software">
-                <div class="soft_img">
-                    <img src="./tools/settings.svg" alt="software" class="icon">
-                    <h4>Software design</h4>
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
                 </div>
-                <p>We Build Websites For Your Needs. Whether you're a business, organization, or an individual looking
-                    for a website.
-                </p>
             </div>
-            <div class="market">
-                <div class="market_img">
-                    <img src="./tools/marketing.svg" alt="marketing" class="icon">
-                    <h4>Marketing</h4>
-                </div>
-                <p>We Build Websites For Your Needs. Whether you're a business, organization, or an individual looking
-                    for a website.
-                </p>
-            </div>
-            <div class="game">
-                <div class="game_img">
-                    <img src="./tools/game-controller.svg" alt="gaming" class="icon">
-                    <h4>Game Design</h4>
-                </div>
-                <p>We Build Websites For Your Needs. Whether you're a business, organization, or an individual looking
-                    for a website.
-                </p>
-            </div>
-        </div>
-        <div class="subscribe">
-
-            <p>Enron is every day here for you. Contact us and stay in touch </p>
-            <label for="emaill">Email :</label>
-            <input type="email" id="emaill" class="email">
-            <a href="#services" class="button service-btn">Subscribe</a>
         </div>
     </section>
-    <!-- Blog section start-->
-    <section id="blog">
-        <div class="blog">
-            <h2>Latest Blog</h2>
-            <div class="first_blog">
-                <img src="./images/blog1.png" alt="first blog" class="blog_img">
-                <p>VB LAB INSIGHTS
-                    How designing with passion can redefine the customer experience
-                    Renee McKeon Rives, Capital One <br>
-                    <small>November 30, 2022 6:20 AM</small>
-                </p>
-            </div>
-            <div class="second_blog">
-                <img src="./images/blog2.png" alt="second blog" class="blog_img">
-                <p>SPONSORED JOBS
-                    7 critical power skills you need to succeed at work
-                    Kirstie McDermott <br>
-                    <small> November 29, 2022 11:49 AM</small>
-                </p>
-            </div>
-        </div>
-        <a href="./UI/pages/blog/signup.html" class="blog-btn button">Sign Up</a>
-    </section>
-    <!-- Contact section start-->
-    <section id="contact">
-        <div class="contact">
-            <h2>My Contacts</h2>
-            <address>
-                Phone :<p> (+250) 786 345 9800</p>
-                Email :<p> ignacemugabe@gmail.com</p>
-                Address :<p> Kigali, Rwanda</p>
-                GitHub :<p> https://github.com/MugabeIgnace</p>
-            </address>
-            <h6>_Get In touch</h6>
 
-        </div>
-        <form action="post">
-            <div class="contact_form">
-                <label for="names">Names:</label>
-                <input type="text" name="names" id="names" required>
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" required>
-                <label for="message">Message:</label>
-            </div>
-            <textarea rows="10" cols="50" name="message" id="message"></textarea>
-        </form>
-        <a href="#contact" class="contact-btn button">Send</a>
-    </section>
-
-
-    <!-- Footer of the Website -->
+    <!-- footer section start -->
     <footer>
-        Website of Mugabe Ignace © all right reserved
+        <span>Created By <a href="https://github.com/MugabeIgnace">Mugabe Ignace</a> | <span
+                class="far fa-copyright"></span> 2022 All rights reserved.</span>
     </footer>
 
-
+    <script src="script.js"></script>
 </body>
 
 </html>
