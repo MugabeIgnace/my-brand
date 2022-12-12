@@ -1,16 +1,15 @@
-/* Googlefont Poppins CDN Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 :root {
-    --clr-background: #102B3C;
     --clr-primary: #0C73B5;
+    --clr-secondary: #53ACE5;
+    --clr-primary2: #102B3C;
     --clr-white: white;
-    --clr-active-bg: #235574;
-    --clr-secondary: #1A88CF;
-    --clr-secondary2: #53ACE5;
     --clr-line: #999;
     --clr-hover: #bdffff;
     --clr-btn-bg: #4496CB;
+    --clr-active-bg: #235574;
+
 }
 
 hr {
@@ -27,251 +26,139 @@ hr {
     text-decoration: none;
 }
 
+h3 {
+    color: var(--clr-white);
+    margin: 1rem;
+}
+
+p {
+    text-align: justify;
+    margin-left: 1rem;
+    width: 60%;
+}
+
+body {
+    background-color: var(--clr-primary);
+}
+
+header {
+    display: flex;
+    background-image: url(../../../images/splash.avif);
+    background-position: center;
+    background-size: cover;
+    padding: 0.5em;
+    border-radius: 0px 0px 20px 20px;
+    justify-content: space-between;
+}
+.left_hd{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.left_hd div button{
+    margin-right: 1em;
+}
+.left_hd h1{
+    background-color: var(--clr-primary2);
+    color: var(--clr-primary);
+    width: 60%;
+}
+.left_hd h1 span{
+    color: var(--clr-white);
+}
 button {
     border-style: none;
     border-radius: 20px;
     padding: 0.8em 2em;
     cursor: pointer;
+    color: var(--clr-white);
+    background-color: var(--clr-primary);
+}
+button a{
+    color: var(--clr-white);
 }
 
-button:hover {
+
+button:hover,
+#dropdown_content a:hover {
     filter: blur(0.04em);
     color: var(--clr-hover);
     box-shadow: #1f435a 0px 30px 60px -12px inset, #1f435a 0px 18px 36px -18px inset;
 }
 
-button:active {
-    color: var(--background-color);
+.dropdown {
+    display: inline-grid;
 }
 
-aside {
-    grid-area: aside;
-    display: grid;
-    height: 100vh;
-
-}
-
-.nav_upper {
-    background-color: var(--clr-background);
-    height: 80%;
-}
-
-.nav_upper>ul>li {
-    text-align: center;
-    padding: 1em 1.3em;
-    margin-top: 1em;
-}
-
-.nav_lower {
-    display: flex;
-    background-color: var(--clr-primary);
-    height: 100%;
-
-}
-
-.nav_upper>h1 {
-    color: var(--clr-white);
-    background-color: var(--clr-primary);
-    text-align: center;
-    padding: 0.4em 1em;
-}
-
-.nav_lower>button {
-    background-color: var(--clr-background);
-    margin: 0 0 1em 2em;
-    align-self: flex-end;
-}
-
-.nav_lower>button>a {
-    color: var(--clr-white);
-
-}
-
-.nav_lower>button>a:active {
-    color: var(--background-color);
-}
-
-.active {
-    background-color: var(--clr-active-bg);
-}
-
-.nav_upper ul li {
-    color: var(--clr-white);
-}
-
-
-.readers {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--clr-secondary2);
-    grid-area: readers;
-    border-radius: 20px;
-    margin: 2em;
-    padding-right: 1em;
-
-}
-
-
-.readers>div>img,
-.readers>div>p,
-.readers>div>h4 {
-    margin-left: 2em;
-    margin-right: 1em;
-}
-
-.numbers {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1em;
-    background-color: var(--clr-secondary);
-    grid-area: numbers;
-    margin: 2em 4em 3em 2em;
-    padding: 0.3em 1em 1em 1em;
-    border-radius: 20px;
-}
-
-
-
-.left_main {
-    grid-area: left;
-    display: grid;
-    grid-template-areas:
-        "numbers  numbers"
-        "readers  readers"
-        "readers  readers"
-    ;
-}
-
-.right_main {
-    grid-area: right;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--clr-secondary2);
-    border-radius: 20px;
-    padding: 2em;
-    margin: 4.5em 1em 1em 2em;
-}
-
-.right_main>div {
-    display: flex;
-    margin-top: 2em;
-}
-
-.right_main>div>p {
-    margin-top: 2em;
-    margin-right: 1em;
-}
-
-
-
-
-
-main {
-    grid-area: main;
-    display: flex;
-}
-
-body {
-    display: grid;
-    background-color: var(--clr-primary);
-    grid-template-areas:
-        "aside  main main"
-        "aside main main"
-    ;
-}
-
-.left_hd {
-    display: flex;
-    background-image: url(../../../images/splash.avif);
-    margin: 0 1em;
-    border-radius: 0 0 20px 20px;
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-}
-
-.left_hd>button {
-    align-self: flex-end;
-    background-color: var(--clr-secondary);
-    margin: 0 0 2em 2em;
-}
-
-.left_hd>button>a {
-    color: var(--clr-white);
-
-}
-
-.left_hd>button>a:active {
-    color: var(--clr-background);
-}
-
-
-.right_hd {
-    background-color: var(--clr-background);
-    border-radius: 20px;
-    padding: 1em;
-    margin: 0 1em;
-    height: 80%;
-}
-
-.right_hd>img {
-    height: 6em;
-    width: 6em;
-    border-radius: 20px;
-
-}
-
-.right_hd>h4 {
-    color: var(--clr-white);
-    text-align: center;
-
-}
-
-.right_hd>h4>a {
-    text-decoration: none;
-    color: var(--clr-white);
-
-}
-
-.likes {
-    background-color: var(--clr-white);
-    border-radius: 20px;
-    text-align: center;
-    padding: 2em 0.4em 1em;
-    display: flex;
-    flex-direction: column;
-    margin-top: 1em;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.likes>h4 {
-    margin-top: 1.3em;
-}
-
-
-.show {
-    width: 4em;
-    height: 2.5em;
-    margin-bottom: 0.1em;
-}
-
-.readers>div {
-
-    display: flex;
-    margin-top: 2em;
-}
-
-.right_main>div>button,
-.readers>div>button {
-    margin-left: 12em;
-    background-color: var(--clr-btn-bg);
+.dropdown_btn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
     cursor: pointer;
 }
 
-.space {
+.dropdown_btn:hover,
+.dropdown_btn:focus {
+    background-color: #2980B9;
+}
+
+
+#dropdown_content {
+    visibility: hidden;
+    display: inline-grid;
+    position: relative;
+    border-style: none;
+    border-radius: 10px 10px 20px 20px;
+    padding: 0.3em;
+    cursor: pointer;
+    background-color: var(--clr-primary);
+}
+
+#dropdown_content a {
+    color: var(--clr-white);
+    text-align: center;
+}
+
+
+main {
+    background-color: var(--clr-secondary);
+    border-radius: 20px;
+    margin: 4em 1em 1em 1em;
+    padding-bottom: 0.5em;
+}
+
+.title,
+.blog {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin: 2em;
+    cursor: pointer;
+}
+
+.date {
+    align-self: center;
+    font-size: smaller;
+    justify-content: center;
+}
+
+.article {
+    display: flex;
+}
+
+.article img {
+    width: 200px;
+    border-radius: 20px;
+}
+
+/* hide html element*/
+.hidden {
+    display: none;
+}
+
+/*show html element*/
+.show {
+    display: block;
 }
