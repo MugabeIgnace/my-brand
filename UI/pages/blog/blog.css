@@ -12,6 +12,11 @@
 
 }
 
+p::selection {
+    background-color: yellowgreen;
+    color: black;
+}
+
 hr {
     border: 0;
     height: 0;
@@ -142,9 +147,10 @@ main a {
 
 main a h2 {
     color: var(--clr-white);
-    
+
 }
-.blog{
+
+.blog {
     border-radius: 20px;
 }
 

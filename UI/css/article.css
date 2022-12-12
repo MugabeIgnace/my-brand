@@ -1,8 +1,16 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
 :root {
-    --clr-background: #344d76;
+    --clr-background: #12232E;
+    --clr-btn-background: #102b3c;
     --clr-primary1: #102b3c;
     --clr-primary2: #007cc7b5;
     --clr-white: #ffffff;
+    --clr-input-bg: #7ab0f7;
+
 }
 
 body {
@@ -11,10 +19,32 @@ body {
 
 }
 
+p::selection{
+    background-color: yellowgreen;
+    color: black;
+}
+
+/* Form */
+/*----------------------------------------------------------------
+*/
+form {
+    border-radius: 20px;
+    border-style: ridge;
+    border-color: var(--clr-primary1);
+    padding: 2em;
+    height: 80vh;
+    background-color: var(--clr-primary2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .text-editor {
     min-height: 200px;
-    border-radius: 5px;
-    border-style: groove;
+    border-radius: 0 0 20px 20px;
+    height: 50vh;
+    background-color: var(--clr-input-bg);
+
 }
 
 #text-editor {
@@ -22,5 +52,21 @@ body {
 }
 
 input {
-    min-width: 100px;
+    border-color: var(--clr-primary1);
+    width: 60%;
+    border-style: none;
+    background-color: var(--clr-input-bg);
+}
+
+button {
+    background-color: var(--clr-btn-background);
+    color: var(--clr-white);
+    align-self: center;
+    padding: 0.3em 1em;
+    border-radius: 10px;border-style: none;
+}
+
+select {
+    background-color: var(--clr-btn-background);
+    color: var(--clr-white);
 }

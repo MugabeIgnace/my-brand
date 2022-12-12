@@ -10,6 +10,7 @@
     width: 200px;
     border-radius: 20px;
 }
+
 .row_head.second {
     display: flex;
     flex-direction: column;
@@ -17,7 +18,8 @@
 
 }
 
-#define,small {
+#define,
+small {
     color: var(--clr-primary2);
     width: 100%;
     text-align: center;
@@ -28,4 +30,9 @@
     margin: 1rem;
     text-align: justify;
     padding: 1em;
+}
+
+p::selection {
+    background-color: yellowgreen;
+    color: black;
 }
