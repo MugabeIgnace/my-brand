@@ -19,11 +19,6 @@ body {
 
 }
 
-p::selection{
-    background-color: yellowgreen;
-    color: black;
-}
-
 /* Form */
 /*----------------------------------------------------------------
 */

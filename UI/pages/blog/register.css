@@ -91,3 +91,11 @@ label {
 h2 {
     margin-left: 20%;
 }
+
+
+/* error messages*/
+#error-messages {
+    width: 100%;
+    color: red;
+}
+

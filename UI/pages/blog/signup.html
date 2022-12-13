@@ -16,18 +16,21 @@
         <a href="./login.html" class="register button">Login</a>
     </div>
 
-    <form action="./login.html" class="start">
+    <form id="form" action="./login.html" method="GET" class="start">
         <h2>Sign Up</h2>
 
         <label for="user">Username /Email address </label>
         <input type="text" name="user" id="user" placeholder="Username or Email" required>
         <label for="password">Password</label>
         <input type="password" name="password" id="password" placeholder="Password" required>
+        <p id="error-messages"> </p>
         <button class="sign button" type="submit">Register</button>
         <a href="#" class="with_email">Register by E-mail?</a>
 
     </form>
 
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
