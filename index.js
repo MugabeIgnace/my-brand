@@ -1,6 +1,6 @@
 var check_valid = function () {
 
-    var mean;
+    var means;
     const name = document.getElementById("name");
     const form = document.getElementById("form");
     const subject = document.getElementById("subject");
@@ -24,9 +24,9 @@ var check_valid = function () {
 
         //check validity of email address
         function isValidEmail(e) {
-            mean = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            means = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
             var email = e.value;
-            if (!mean.test(email)) {
+            if (!means.test(email)) {
                 return false;
             }
         }
