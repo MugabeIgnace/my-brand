@@ -6,8 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blogs</title>
+
+    <!-- Adding my kit's code to the project from fontawesome-->
+    <script src="https://kit.fontawesome.com/a7221279c0.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./dashboard.css">
     <link rel="stylesheet" href="./blog.css">
-    <link rel="stylesheet" href="./read.css">
 </head>
 
 <body>
@@ -17,12 +22,8 @@
                 <h1>MI<span>gnace.</span></h1>
             </a>
             <div>
-
                 <button>
-                    <a href="../../articles.html" class="button">Create Article +</a>
-                </button>
-                <button>
-                    <a href="./blogs.html"> Articles </a>
+                    <a href="./Dashboard.html"> More Articles </a>
                 </button>
 
             </div>
@@ -47,12 +48,16 @@
         <section class="head">
             <div class="row_head">
                 <img src="../../../images/blog1.png" alt="">
-                <h3>VB LAB INSIGHTS</h3>
+                <h2>VB LAB INSIGHTS</h2>
             </div>
             <div class="row_head second">
                 <p id="define"><b>How designing with passion can redefine the customer experience
                         Renee McKeon Rives, Capital One</b></p>
                 <small>November 30,2022</small>
+
+                <div>
+                    <i class="fa-solid fa-thumbs-up" id="like">Like</i>
+                </div>
             </div>
             <hr>
             <hr>
@@ -65,14 +70,7 @@
             natus perspiciatis est ullam voluptatum id accusamus excepturi nulla officia, ut eligendi asperiores
             doloremque laudantium.<br />
             lorem ipsum dolor sit amet, consectet
-            lorem ipsum dolor sit amet, consectet ipsum dolor sit amet
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores eos expedita exercitationem excepturi,
-            aliquam praesentium magni, adipisci rem ipsa fugiat soluta magnam optio aperiam, at beatae consequuntur
-            amet. Eum, non. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias earum, dolorem sint
-            inventore atque hic
-            sequi aspernatur laboriosam beatae dignissimos doloribus? Error assumenda, architecto vel iure ut nisi quod
-            sequi!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sequi officiis modi accusantium! Ducimus ab
+            olor sit amet consectetur adipisicing elit. Tempora sequi officiis modi accusantium! Ducimus ab
             natus perspiciatis est ullam voluptatum id accusamus excepturi nulla officia, ut eligendi asperiores
             doloremque laudantium.<br /><br /><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptates
                 quaerat quas molestias consequatur perferendis itaque at! Pariatur nobis vero, veniam, eius, repudiandae
@@ -99,31 +97,29 @@
             inventore atque hic
             sequi aspernatur laboriosam beatae dignissimos doloribus? Error assumenda, architecto vel iure ut nisi quod
             sequi!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sequi officiis modi accusantium! Ducimus ab
-            natus perspiciatis est ullam voluptatum id accusamus excepturi nulla officia, ut eligendi asperiores
-            doloremque laudantium.<br />
-            lorem ipsum dolor sit amet, consectet
-            lorem ipsum dolor sit amet, consectet ipsum dolor sit amet
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores eos expedita exercitationem excepturi,
-            aliquam praesentium magni, adipisci rem ipsa fugiat soluta magnam optio aperiam, at beatae consequuntur
-            amet. Eum, non.<br />
-            <br />
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias earum, dolorem sint inventore atque hic
-            sequi aspernatur laboriosam beatae dignissimos doloribus? Error assumenda, architecto vel iure ut nisi quod
-            sequi!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sequi officiis modi accusantium! Ducimus ab
-            natus perspiciatis est ullam voluptatum id accusamus excepturi nulla officia, ut eligendi asperiores
-            doloremque laudantium.<br />
-            lorem ipsum dolor sit amet, consectet
-            lorem ipsum dolor sit amet, consectet ipsum dolor sit amet
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores eos expedita exercitationem excepturi,
-            aliquam praesentium magni, adipisci rem ipsa fugiat soluta magnam optio aperiam, at beatae consequuntur
-            amet. Eum, non.
+
+        </section>
+        <section class="comment">
+            <form action="./blog.html" method="post">
+                <div class="input-group1">
+                    <label for="title"><b>Comment as:</b></label>
+                    <input type="text" name="title" id="title" class="input-control">
+                </div>
+                <div class="input-group">
+                    <div id="text-editor" class="text-editor"></div>
+                </div>
+
+                <button type="submit" class="submit">Post</button>
+            </form>
         </section>
 
     </main>
 
     <script src="./script.js"></script>
+
+    <!-- Include the Quill library -->
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script src="../../js/quill.js"></script>
 
 </body>
 

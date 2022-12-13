@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    --clr-primary: #0C73B5;
+    --clr-secondary: #53ACE5;
+    --clr-primary2: #102B3C;
+    --clr-white: white;
+    --clr-line: #999;
+    --clr-hover: #bdcfff6b;
+    --clr-btn-bg: #4496CB;
+    --clr-active-bg: #235574;
+
+}
+
+/* prevent selection from distruction */
+p::selection {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+h3 {
+    color: var(--clr-white);
+    margin: 1rem;
+}
+
+/*Paragraph*/
+p {
+    text-align: justify;
+    margin: 1rem;
+    width: 60vw;
+}
+
+body {
+    background-color: var(--clr-primary);
+}
+
+header {
+    display: flex;
+    background-image: url(../../../images/splash.avif);
+    background-position: center;
+    background-size: cover;
+    padding: 0.5em;
+    border-radius: 0px 0px 20px 20px;
+    justify-content: space-between;
+}
+
+.left_hd {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left_hd div button {
+    margin-right: 1em;
+}
+
+.left_hd h1 {
+    background-color: var(--clr-primary2);
+    color: var(--clr-primary);
+    width: 60%;
+}
+
+.left_hd h1 span {
+    color: var(--clr-white);
+}
+
+button {
+    border-style: none;
+    border-radius: 20px;
+    padding: 0.8em 2em;
+    cursor: pointer;
+    color: var(--clr-white);
+    background-color: var(--clr-primary);
+}
+
+button a {
+    color: var(--clr-white);
+}
+
+
+button:hover,
+#dropdown_content a:hover {
+    filter: blur(0.04em);
+    color: var(--clr-hover);
+    box-shadow: #1f435a 0px 30px 60px -12px inset, #1f435a 0px 18px 36px -18px inset;
+}
+
+.dropdown {
+    display: inline-grid;
+}
+
+.dropdown_btn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown_btn:hover,
+.dropdown_btn:focus {
+    background-color: #2980B9;
+}
+
+
+#dropdown_content {
+    visibility: hidden;
+    display: inline-grid;
+    position: relative;
+    border-style: none;
+    border-radius: 10px 10px 20px 20px;
+    padding: 0.3em;
+    cursor: pointer;
+    background-color: var(--clr-primary);
+}
+
+#dropdown_content a {
+    color: var(--clr-white);
+    text-align: center;
+}
+
+
+.main {
+    background-color: var(--clr-secondary);
+    border-radius: 20px;
+    margin: 4em 1em 1em 1em;
+    padding-bottom: 0.5em;
+}
+
+
+.top_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--clr-white);
+}
+
+.top_main div {
+    border-color: var(--clr-primary2);
+    margin-left: 1rem;
+    margin-top: 2rem;
+    padding: 1em;
+
+}
+
+.show_border {
+    border-left-style: dashed;
+    border-left-color: var(--clr-white);
+    border-left-width: 1px;
+}
+
+
+.main a {
+    color: black;
+
+}
+
+.main a h2 {
+    color: var(--clr-white);
+
+}
+
+.blog {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    padding: 2em 0 2em 2em;
+}
+
+.icon:hover {
+    color: white;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-between;
+    cursor: pointer;
+    padding-right: 2em;
+}
+
+.title .date {
+    display: flex;
+    width: 100%;
+    padding-left: 74%;
+}
+
+.blog .date {
+    align-self: center;
+    font-size: smaller;
+    justify-content: flex-start;
+}
+
+.title .article {
+    margin-left: 4em;
+    align-self: flex-start;
+}
+
+.blog .article {
+    display: flex;
+}
+
+.action {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 4em;
+}
+
+.article img {
+    width: 200px;
+    border-radius: 20px;
+}
+
+/* hide html element*/
+.hidden {
+    display: none;
+}
+
+/*show html element*/
+.show {
+    display: block;
+}
