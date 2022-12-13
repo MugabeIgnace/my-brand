@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blogs</title>
-    <link rel="stylesheet" href="./blog.css">
+    <title>Dashboard</title>
+
+    <!-- Adding my kit's code to the project from fontawesome-->
+    <script src="https://kit.fontawesome.com/a7221279c0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./dashboard.css">
 </head>
 
 <body>
@@ -19,9 +22,6 @@
 
                 <button>
                     <a href="../../articles.html" class="button">Create Article +</a>
-                </button>
-                <button>
-                    <a href="./blogs.html"> Articles </a>
                 </button>
 
             </div>
@@ -43,15 +43,44 @@
         </div>
     </header>
     <main>
-        <div class="title">
-            <div class="article">
-                <h2>Articles</h2>
+        <div class="top_main">
+
+            <div>
+
+                <i class="fa-solid fa-user"></i> <span id="followers_count">0</span> Followers
+
             </div>
-            <div class="date">
-                <h2>Date</h2>
+
+            <div class="show_border">
+
+                <i class="fa-solid fa-clipboard"></i> <span id="articles_count">0</span> Articles
+
+            </div>
+            <div class="show_border">
+
+                <i class="fa-solid fa-comment-dots"></i> <span id="comments_count">0</span> Comments
+
+            </div>
+            <div class="show_border">
+
+                <i class="fa-solid fa-thumbs-up"></i> <span id="comments_count">0</span> Likes
+
             </div>
         </div>
-        <a href="./blog.html">
+        <div class="main">
+
+            <div class="title">
+                <div class="article">
+                    <h2>Articles</h2>
+                </div>
+                <div class="date">
+                    <h2>Date</h2>
+                </div>
+                <div>
+                    <h2>Action</h2>
+                </div>
+            </div>
+
             <div class="blog">
                 <div class="article">
 
@@ -66,10 +95,21 @@
                     <small>November 30, 2022</small>
 
                 </div>
+                <div class="action">
+                    <div class=" icon">
+                        <i class="fa-solid fa-trash">Delete</i>
+                    </div>
+                    <div class=" icon">
+                        <a href="./blog.html" class="icon"> <i class="fa-solid fa-eye">View</i></a>
+                    </div>
+                    <div class=" icon">
+                        <i class="fa-solid fa-share">Share</i>
+                    </div>
+
+                </div>
             </div>
-        </a>
-        <hr>
-        <a href="./blog.html">
+            <hr>
+
             <div class="blog">
                 <div class="article">
 
@@ -84,10 +124,20 @@
                     <small>November 29, 2022</small>
 
                 </div>
+                <div class="action">
+                    <div class=" icon">
+                        <i class="fa-solid fa-trash">Delete</i>
+                    </div>
+                    <div class=" icon">
+                        <a href="./blog.html" class="icon"> <i class="fa-solid fa-eye">View</i></a>
+                    </div>
+                    <div class=" icon">
+                        <i class="fa-solid fa-share">Share</i>
+                    </div>
+
+                </div>
             </div>
-        </a>
-        <hr>
-        <a href="./blog.html">
+            <hr>
             <div class="blog">
                 <div class="article">
 
@@ -102,10 +152,20 @@
                     <small>November 30, 2022 </small>
 
                 </div>
+                <div class="action">
+                    <div class=" icon">
+                        <i class="fa-solid fa-trash">Delete</i>
+                    </div>
+                    <div class=" icon">
+                        <a href="./blog.html" class="icon"> <i class="fa-solid fa-eye">View</i></a>
+                    </div>
+                    <div class=" icon">
+                        <i class="fa-solid fa-share">Share</i>
+                    </div>
+
+                </div>
             </div>
-        </a>
-        <hr>
-        <a href="./blog.html">
+            <hr>
             <div class="blog">
                 <div class="article">
 
@@ -120,8 +180,20 @@
                     <small>November 29, 2022</small>
 
                 </div>
+                <div class="action">
+                    <div class=" icon">
+                        <i class="fa-solid fa-trash">Delete</i>
+                    </div>
+                    <div class=" icon">
+                        <a href="./blog.html" class="icon"> <i class="fa-solid fa-eye">View</i></a>
+                    </div>
+                    <div class=" icon">
+                        <i class="fa-solid fa-share">Share</i>
+                    </div>
+
+                </div>
             </div>
-        </a>
+        </div>
     </main>
 
     <script src="./script.js"></script>
