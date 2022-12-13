@@ -762,3 +762,11 @@ footer span a:hover {
     }
 
 }
+
+/* error messages*/
+#error-messages {
+    width: 100%;
+    color: red;
+    box-sizing: border-box;
+}
+
