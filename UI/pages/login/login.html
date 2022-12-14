@@ -16,21 +16,28 @@
         <a href="./signup.html" class="register button">Sign UP</a>
     </div>
 
-    <form id="form" action="../profile/general.html" class="sign_in">
+    <form id="form" action="../profile/general.html" class="sign_in" onsubmit="return validate()">
         <h2>Login</h2>
 
-        <label for="user">Username /Email address </label>
-        <input type="text" name="user" id="user" placeholder="Username or Email" required>
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password" placeholder="Password" required>
-        <p id="error-messages"> </p>
+        <div class="control">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Enter email" required />
+            <small>Error messages</small>
+        </div>
+
+        <div class="control">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password" required />
+            <small>Error messages</small>
+        </div>
+
         <button class="sign button" type="submit">Sign In</button>
         <a href="#" class="reset_password">Forgot Password ?</a>
 
     </form>
 
 
-    <script src="./script.js"></script>
+    <script src="../../js/signin.js"></script>
 </body>
 
 </html>

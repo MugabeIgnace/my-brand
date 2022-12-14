@@ -1,9 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
 :root {
     --clr-background: #2C5C8B;
     --clr-primary1: #102b3c;
     --clr-primary2: #007cc7b5;
     --clr-white: #ffffff;
     --clr-input: #294052;
+    --success-color: #059bff;
+    --error-color: #e74c3c;
 }
 
 body {
@@ -86,16 +92,47 @@ label {
     margin-top: 1em;
 }
 
-.reset_password,
 .with_email,
 h2 {
     margin-left: 20%;
 }
 
+/*/===================================================================*/
 
-/* error messages*/
-#error-messages {
-    width: 100%;
-    color: red;
+.control {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
 }
 
+.control label {
+    display: block;
+}
+
+.control input {
+    border: 1px solid var(--clr-white);
+    border-radius: 5px;
+    display: block;
+    width: 110%;
+    padding: 0.3em;
+}
+
+.control input:focus {
+    outline: 0;
+}
+
+.control.success input {
+    border-color: var(--success-color);
+}
+
+.control.error input {
+    border-color: var(--error-color);
+}
+
+.control small {
+    color: var(--error-color);
+    visibility: hidden;
+}
+
+.control.error small {
+    visibility: visible;
+}
