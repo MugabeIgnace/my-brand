@@ -220,19 +220,22 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form method="GET" name="form" action="/" onload="return check_valid()">
+                    <form method="GET" name="form" action="/" id="form" class="form">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" id="name" class="input-name" name="name" placeholder="Name" required>
+                                <input type="text" id="name" class="input-name" placeholder="Name" required>
+                                <small>Error messages</small>
 
                             </div>
                             <div class="field email">
                                 <input type="email" class="input-email" id="email" placeholder="Email" required>
+                                <small>Error messages</small>
 
                             </div>
                         </div>
                         <div class="field">
                             <input type="text" class="input-subject" id="subject" placeholder="Subject" required>
+                            <small>Error messages</small>
 
                         </div>
                         <div class="field textarea">
@@ -240,7 +243,6 @@
                                 required></textarea>
 
                         </div>
-                        <p id="error-messages">
 
                         </p>
                         <div class="button">
