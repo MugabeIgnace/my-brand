@@ -12,6 +12,9 @@
     --clr-input-bg: #f0f2f3;
     --clr-grey: #235574;
     --clr-dark: #000000;
+    --success-color: #059bff;
+    --error-color: #e74c3c;
+
 
     /* fonts */
     --ff-special: 'Poppins', sans-serif;
@@ -65,7 +68,7 @@ footer {
 }
 
 .project {
-    background-image: url(./images/portfolio.jpg);
+    background-image: url(../../images/portfolio.jpg);
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -196,7 +199,7 @@ section .title::after {
 /* home section styling */
 .home {
     display: flex;
-    background: url("./images/background.jpg") no-repeat center;
+    background: url("../../images/background.jpg") no-repeat center;
     height: 100vh;
     color: var(--clr-white);
     min-height: 500px;
@@ -611,6 +614,26 @@ footer span a:hover {
 }
 
 
+.field.success input {
+    border-color: var(--success-color);
+}
+
+.field.error input {
+    border-color: var(--error-color);
+}
+
+.field small {
+    color: var(--error-color);
+    visibility: hidden;
+}
+
+.field.error small {
+    visibility: visible;
+}
+
+
+
+
 /* responsive of the website */
 @media (max-width: 1300px) {
     .home .max-width {
@@ -762,11 +785,3 @@ footer span a:hover {
     }
 
 }
-
-/* error messages*/
-#error-messages {
-    width: 100%;
-    color: red;
-    box-sizing: border-box;
-}
-

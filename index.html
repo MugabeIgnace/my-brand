@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./UI/css/style.css">
     <!-- Adding my kit's code to the project from fontawesome-->
     <script src="https://kit.fontawesome.com/a7221279c0.js" crossorigin="anonymous"></script>
 
@@ -154,7 +154,7 @@
             <h2 class="title">View blogs</h2>
             <div class="blogs ">
                 <div class="card">
-                    <a href="./UI/pages/blog/Dashboard.html">
+                    <a href="./UI/pages/profile/dashboard.html">
                         <div class="box">
                             <img src="./images/blog1.png" alt="first blog">
 
@@ -168,7 +168,7 @@
                     </a>
                 </div>
                 <div class="card">
-                    <a href="./UI/pages/blog/Dashboard.html">
+                    <a href="./UI/pages/profile/dashboard.html">
 
                         <div class="box">
                             <img src="./images/blog2.png" alt="second blog">
@@ -220,19 +220,22 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form method="GET" name="form" action="/" onload="return check_valid()">
+                    <form method="GET" name="form" action="/" id="form" class="form">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" id="name" class="input-name" name="name" placeholder="Name" required>
+                                <input type="text" id="name" class="input-name" placeholder="Name" required>
+                                <small>Error messages</small>
 
                             </div>
                             <div class="field email">
                                 <input type="email" class="input-email" id="email" placeholder="Email" required>
+                                <small>Error messages</small>
 
                             </div>
                         </div>
                         <div class="field">
                             <input type="text" class="input-subject" id="subject" placeholder="Subject" required>
+                            <small>Error messages</small>
 
                         </div>
                         <div class="field textarea">
@@ -240,7 +243,6 @@
                                 required></textarea>
 
                         </div>
-                        <p id="error-messages">
 
                         </p>
                         <div class="button">
@@ -259,7 +261,7 @@
                 class="far fa-copyright"></span> 2022 All rights reserved.</span>
     </footer>
 
-    <script src="./index.js"></script>
+    <script src="./UI/js/index.js"></script>
 </body>
 
 </html>

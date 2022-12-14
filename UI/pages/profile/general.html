@@ -5,50 +5,133 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile</title>
-    <link rel="stylesheet" href="./profile.css" />
+    <title>Dashboard</title>
+
+    <!-- Adding my kit's code to the project from fontawesome-->
+    <script src="https://kit.fontawesome.com/a7221279c0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../css/profile.css" />
 </head>
 
 <body>
-    <div class="profile">
-        <div class="person">
-            <img src="../../../tools/Profile.jpg" alt="User" class="icon" />
-            <h2>Robert Downey Jr.</h2>
-            <h3>50 years</h3>
-            <h4>Actor</h4>
+    <header>
+        <div class="left_hd">
+            <a href="../../../index.html">
+                <h1>MI<span>gnace.</span></h1>
+            </a>
         </div>
-        <div class="social">
-            <div class="icon"><a href="www.facebook.com"> <img src="../../../tools/facebook-filled.svg"
-                        alt="facebook" /></a></div>
-            <div class="icon"><a href="www.google.com"> <img src="../../../tools/google-plus.svg" alt="google" /></a>
+    </header>
+    <main>
+        <div class="aside">
+            <div class="link">
+
+                <a href="../blog/create-a-blog.html" class="button">
+                    <div> Create Article +
+                    </div>
+                </a>
+                <hr>
+                <div> Dashboard</div>
+                <hr>
+
+
             </div>
-            <div class="icon"><a href="www.linkedin.com"> <img src="../../../tools/linkedin.svg" alt="linkedin" /></a>
+
+
+            <div class="footer">
+                <div class="social">
+                    <div class="icon"><a href="www.facebook.com"> <img src="../../../tools/facebook-filled.svg"
+                                alt="facebook" /></a></div>
+                    <div class="icon"><a href="www.google.com"> <img src="../../../tools/google-plus.svg"
+                                alt="google" /></a>
+                    </div>
+                    <div class="icon"><a href="www.linkedin.com"> <img src="../../../tools/linkedin.svg"
+                                alt="linkedin" /></a>
+                    </div>
+
+                </div>
+
+                <a href="../profile/dashboard.html">Logout</a>
             </div>
         </div>
-        <a href="../blog/blog.html">Home</a>
-    </div>
-    <div class="about">
-        <h1>About</h1>
-        <h2>work</h2>
-        <p>Actor</p>
-        <h2>Gender</h2>
-        <p>Male</p>
-        <h2>Country</h2>
-        <p>Kenya</p>
-        <h2>More Info</h2>
-        <p>
-            It is a long established fact that a reader will be distracted by the
-            readable content of a page when looking at its layout. The point of
-            using Lorem Ipsum is that it has a more-or-less normal distribution of
-            letters. as apposed to using content here, content here', editors now
-            use Lorem Ipsum as their default model text, and a search for 'lorem
-            ipsum' will uncover many web sites still in their infancy. Various
-            versions have evolved over the years, sometimes by accident, sometimes
-            on purpose(injected humour and the like).
-        </p>
-        <h2>Contact</h2>
-        <p>example@gmail.com</p>
-    </div>
+        <div class="main">
+            <div class="group">
+                <div>
+
+                    <i class="fa-solid fa-users"></i> Followers
+
+                </div>
+                <div>
+
+                    <i class="fa-solid fa-layer-group"></i> Articles
+
+                </div>
+                <div>
+
+                    <i class="fa-solid fa-book-open-reader"></i> Visited
+
+                </div>
+                <div>
+
+                    <i class="fa-solid fa-award"></i> Awards
+
+                </div>
+            </div>
+            <div class="articles">
+                <div class="title">
+                    <div class="article">
+                        <h2>Top Articles:</h2>
+                    </div>
+
+                </div>
+
+
+
+
+                <hr>
+                <div class="blog">
+                    <div class="article">
+
+                        <img src="../../../images/blog1.png" alt="">
+                        <div>
+                            <h3>VB LAB INSIGHTS</h3>
+                            <p>How designing with passion can redefine the customer experience
+                                Renee McKeon Rives, Capital One </p>
+                            <small>November 30, 2022 </small>
+                        </div>
+
+
+
+                    </div>
+                    <div class="like">
+                        <span id="comments_count">5</span><i class="fa-solid fa-thumbs-up"></i> Likes
+
+
+                    </div>
+                </div>
+                <hr>
+                <div class="blog">
+                    <div class="article">
+
+                        <img src="../../../images/blog2.png" alt="">
+                        <div>
+                            <h3>SPONSORED JOBS</h3>
+                            <p>7 critical power skills you need to succeed at work
+                                Kirstie McDermott </p>
+                            <small>November 29, 2022</small>
+                        </div>
+
+
+
+                    </div>
+                    <div class="like">
+                        <span id="comments_count">3</span><i class="fa-solid fa-thumbs-up"></i> Likes
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
 </body>
 
 </html>

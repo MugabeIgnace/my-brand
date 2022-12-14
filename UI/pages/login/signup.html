@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="../../css/register.css" />
+</head>
+
+<body>
+    <div class="account">
+        <h2>Welcome</h2>
+        <p>Already have a blog account </p>
+        <a href="./login.html" class="register button">Login</a>
+    </div>
+
+    <form id="form" action="./login.html" class="start" onsubmit="return validate()">
+        <h2>Sign Up</h2>
+
+        <div class="control">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter username" required />
+            <small>Error messages</small>
+        </div>
+        <div class="control">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Enter email" required />
+            <small>Error messages</small>
+        </div>
+
+        <div class="control">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password" required />
+            <small>Error messages</small>
+        </div>
+
+        <button class="sign button" type="submit">Register</button>
+        <a href="#" class="with_email">Register by E-mail?</a>
+
+    </form>
+
+
+    <script src="../../js/signup.js"></script>
+</body>
+
+</html>

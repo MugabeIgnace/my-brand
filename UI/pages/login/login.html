@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../../css/register.css" />
+</head>
+
+<body>
+    <div class="sign_up">
+        <h2>Welcome</h2>
+        <p>Create your account for free</p>
+        <a href="./signup.html" class="register button">Sign UP</a>
+    </div>
+
+    <form id="form" action="../profile/general.html" class="sign_in" onsubmit="return validate()">
+        <h2>Login</h2>
+
+        <div class="control">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Enter email" required />
+            <small>Error messages</small>
+        </div>
+
+        <div class="control">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password" required />
+            <small>Error messages</small>
+        </div>
+
+        <button class="sign button" type="submit">Sign In</button>
+        <a href="#" class="reset_password">Forgot Password ?</a>
+
+    </form>
+
+
+    <script src="../../js/signin.js"></script>
+</body>
+
+</html>
