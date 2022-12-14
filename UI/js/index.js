@@ -16,7 +16,7 @@ var check_valid = function () {
             messages.push('Please Enter all information.');
         }
 
-        else if (!(isValidEmail(email))) {
+        else if (isValidEmail(email) == false) {
             messages.push("You have entered invalid email address");
 
         }
@@ -26,7 +26,7 @@ var check_valid = function () {
         function isValidEmail(e) {
             means = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
             var email = e.value;
-            if (!means.test(email)) {
+            if (!(means.test(email))) {
                 return false;
             }
         }

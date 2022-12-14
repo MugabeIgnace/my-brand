@@ -65,7 +65,7 @@ footer {
 }
 
 .project {
-    background-image: url(./images/portfolio.jpg);
+    background-image: url(../../images/portfolio.jpg);
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -196,7 +196,7 @@ section .title::after {
 /* home section styling */
 .home {
     display: flex;
-    background: url("./images/background.jpg") no-repeat center;
+    background: url("../../images/background.jpg") no-repeat center;
     height: 100vh;
     color: var(--clr-white);
     min-height: 500px;
@@ -769,4 +769,3 @@ footer span a:hover {
     color: red;
     box-sizing: border-box;
 }
-

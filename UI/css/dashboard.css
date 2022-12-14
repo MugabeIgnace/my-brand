@@ -43,7 +43,8 @@ h3 {
 /*Paragraph*/
 p {
     text-align: justify;
-   
+    margin: 1rem;
+    width: 60vw;
 }
 
 body {
@@ -52,11 +53,11 @@ body {
 
 header {
     display: flex;
-    background-color: var(--clr-primary2);
+    background-image: url(../../../images/splash.avif);
     background-position: center;
     background-size: cover;
     padding: 0.5em;
-    border-radius: 0px 0px 20px 20px;
+    height: 100%;
     justify-content: space-between;
 }
 
@@ -93,11 +94,6 @@ button a {
     color: var(--clr-white);
 }
 
-main{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
 
 button:hover,
 #dropdown_content a:hover {
@@ -142,7 +138,7 @@ button:hover,
 }
 
 
-.left {
+.main {
     background-color: var(--clr-secondary);
     border-radius: 20px;
     margin: 4em 1em 1em 1em;
@@ -160,10 +156,17 @@ button:hover,
 
 .top_main div {
     border-color: var(--clr-primary2);
+    background-color: var(--clr-secondary);
     margin-left: 1rem;
     margin-top: 2rem;
     padding: 1em;
+    cursor: pointer;
 
+}
+
+.top_main div:hover,
+.top_main .focused {
+    background-color: rgba(153, 153, 153, 0.685);
 }
 
 .show_border {
@@ -173,48 +176,68 @@ button:hover,
 }
 
 
-.left a {
+.main a {
     color: black;
 
 }
 
-.left a h2 {
+.main a h2 {
     color: var(--clr-white);
 
-}
-.right{
-    margin: 2em 1em;
 }
 
 .blog {
     border-radius: 20px;
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 2em ;
+    flex-direction: row;
+    align-content: space-around;
+    padding: 2em 0 2em 2em;
 }
 
 .icon:hover {
     color: white;
 }
 
-
-
-.actions {
+.title {
     display: flex;
     flex-direction: row;
+    align-content: space-between;
+    justify-content: space-between;
+    cursor: pointer;
+    padding-right: 2em;
+}
+
+.title .date {
+    display: flex;
+    width: 100%;
+    padding-left: 74%;
+}
+
+.blog .date {
+    align-self: center;
+    font-size: smaller;
+    justify-content: flex-start;
+}
+
+.title .article {
+    margin-left: 4em;
+    align-self: flex-start;
+}
+
+.blog .article {
+    display: flex;
+}
+
+.action {
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
     margin-left: 4em;
 }
 
 .article img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
     border-radius: 20px;
-}
-.article div{
-    display: flex;
-    flex-direction: column;
 }
 
 /* hide html element*/
@@ -225,85 +248,4 @@ button:hover,
 /*show html element*/
 .show {
     display: block;
-}
-
-.head {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    padding: 1em;
-}
-
-.row_head img {
-    width: 60%;
-    height: 60%;
-    border-radius: 20px;
-}
-
-.row_head.second {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-h2,
-.define,
-small {
-    color: white;
-}
-
-#define,
-small {
-    color: var(--clr-primary2);
-    width: 100%;
-    text-align: center;
-}
-
-.body {
-    color: black;
-    background-color: white;
-    margin: 1rem;
-    text-align: justify;
-    padding: 1em;
-    scroll-behavior: smooth;
-    border-radius: 20px;
-}
-
-form {
-    background-color: var(--clr-primary2);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 2em;
-}
-
-#like {
-    color: white;
-    cursor: pointer;
-}
-
-#like:hover {
-    color: black;
-}
-
-.text-editor {
-    min-height: 200px;
-    background-color: white;
-    color: black;
-}
-
-.input-group,
-.input-group1 {
-    margin-bottom: 2em;
-    border-radius: 20px;
-}
-
-.input-group1 input {
-    width: 300px;
-}
-
-.submit {
-    width: 200px;
 }
