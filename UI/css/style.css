@@ -475,6 +475,29 @@ section .title::after {
     border-color: var(--clr-white);
 }
 
+.blogs .button {
+    height: 47px;
+    width: 170px;
+    text-align: center;
+    align-self: center;
+    border: 2px solid var(--clr-secondary);
+    background: var(--clr-secondary);
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.blogs>.button:hover {
+    background: none;
+    color: var(--clr-secondary);
+}
+
+.blogs>a {
+    color: var(--clr-white);
+}
 
 /* contact section */
 
