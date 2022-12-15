@@ -8,7 +8,7 @@
     --clr-primary2: #007cc7b5;
     --clr-white: #ffffff;
     --clr-input: #294052;
-    --success-color: #059bff;
+    --success-color: #0dff05;
     --error-color: #e74c3c;
 }
 
@@ -135,4 +135,14 @@ h2 {
 
 .control.error small {
     visibility: visible;
+}
+
+input:invalid {
+    border-color: var(--clr-primary2);
+}
+
+
+
+input:valid {
+    border-color: var(--success-color);
 }
