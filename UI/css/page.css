@@ -33,6 +33,7 @@ hr {
     padding: 0;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 h3 {
@@ -43,12 +44,12 @@ h3 {
 /*Paragraph*/
 p {
     text-align: justify;
-    line-height: normal;
 
 }
 
 body {
     background-color: var(--clr-primary);
+    width: 100vw;
 }
 
 header {
@@ -102,7 +103,7 @@ main {
 .main-top {
     display: flex;
     flex-direction: row;
-    justify-content:flex-start;
+    justify-content: flex-start;
 
 }
 
@@ -347,3 +348,106 @@ form {
     padding-left: 2em;
 }
 
+/*===================================================================
+
+/* responsive of the website */
+
+
+@media (max-width: 991px) {
+    .left {
+        margin: 0.5em;
+    }
+
+}
+
+
+@media (max-width: 690px) {
+    .body {
+        font-size: small;
+        margin-left: 0.1em;
+    }
+
+    form {
+        padding: 1em;
+        width: 100%;
+    }
+
+    .right {
+        margin: 0;
+    }
+
+    header {
+        width: inherit;
+        padding: 0.1em;
+        margin: 0;
+
+    }
+
+    .actions {
+        margin-left: 2em;
+    }
+
+    .left_hd div button {
+        margin: 0;
+    }
+
+    #comments {
+        padding-left: 1em;
+    }
+
+    .article img {
+        width: 89px;
+        height: 89px;
+    }
+
+    .article {
+        padding: 0.2em;
+        width: 92px;
+    }
+
+    .top_main div {
+        margin: 0.3rem;
+    }
+
+    #define {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 500px) {
+body{
+    font-size: small;
+}
+    #comments,
+    .comment {
+        width: 100vw;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .body{
+        font-size: smaller;
+    }
+    .row_head img{
+        width: 50%;
+    }
+    .row_head h2{
+        font-size: small;
+    }
+    .row_head.second{
+        font-size: small;
+        align-self: flex-start;
+    }
+    .define{
+        align-self: flex-end;
+    }
+    .top_main{
+        font-size: smaller;
+    }
+    .top_main div{
+        margin: 0;
+    }
+}

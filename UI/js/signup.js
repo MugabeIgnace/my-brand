@@ -21,9 +21,7 @@ function addAccount() {
         localStorage.setItem('user', JSON.stringify(user));
         accounts.push(user);
 
-
         //const storeduser = JSON.parse(localStorage.getItem('user'));
-
     }
     else {
         alert("The Account already exists");
