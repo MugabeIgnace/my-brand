@@ -3,6 +3,16 @@ const form = document.getElementById('form');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 
+function checkUser() {
+    if ((email.value = localStorage.getItem('email')) && (password.value = localStorage.getItem('password'))) {
+        alert('Welcome!!!.');
+    } else {
+        alert('Create an account please');
+        window.location.href = "./signup.html";
+    }
+}
+
+
 //  Error message
 function showError(input, message) {
     const formControl = input.parentElement;
@@ -73,4 +83,6 @@ form.addEventListener('submit', function (e) {
     checkRequired([email, password]);
     checkEmail(email);
     checkLength(password, 6, 12);
+    checkUser();
 });
+
