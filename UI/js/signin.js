@@ -4,7 +4,7 @@ const email = document.getElementById('email');
 const password = document.getElementById('password');
 
 function checkUser() {
-    if ((email.value = localStorage.getItem('email')) && (password.value = localStorage.getItem('password'))) {
+    if ((email.value = localStorage.getItem('email'))) {
         alert('Welcome!!!.');
     } else {
         alert('Create an account please');
